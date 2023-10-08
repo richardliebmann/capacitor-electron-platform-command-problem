@@ -2,7 +2,10 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "add-platform-android": "cd apps/cap-sync-error && npx cap add android",
+    "add-platform-electron": "cd apps/cap-sync-error && npx cap add @capacitor-community/electron"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
@@ -13,6 +16,8 @@
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
+    "@capacitor-community/electron": "^5.0.1",
+    "@capacitor/android": "^5.4.2",
     "@nx/angular": "16.8.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
